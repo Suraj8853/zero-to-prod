@@ -205,3 +205,26 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Keys and secrets - NEVER commit these
+*.pem
+*.key
+*.p12
+secrets/
+
+# Logs
+*.log
+logs/
+
+# Database
+*.sql.backup
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
+```
+
+**Most important line:**
+```
+*.pem
+*.key
