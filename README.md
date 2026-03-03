@@ -12,3 +12,12 @@
 - Network connections verified through using ping command to communicate within all the three hosts
 - Security Groups configured : ports 22,80,443 open externally
   ICMP(for ping command) restricted to 172.31.0.0/16
+
+## Task 2: Python application setup as ssystemd service
+- Installed dependencies for python in Host B 
+- Setup a python flask app that return json payload based on routes.(/opt/app) path in HOST B 
+- Made flask application as a systemd service that runs without interruption.
+- Enabled the ReStart on Failure so that it restarts after crashes or any issues.
+- Enabled the flask service so that it runs always on startup and reboot.
+- Proved restart-on-failure by killing the process with kill -9, 
+  systemd automatically restarted with a new PID within 5 seconds
