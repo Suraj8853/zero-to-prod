@@ -1,0 +1,14 @@
+[Unit]
+Description=Flask Health Check App
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/opt/app
+ExecStart=/opt/app/venv/bin/python3 /opt/app/app.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
