@@ -30,3 +30,9 @@
 - Added Inbound rule for Host B to open the port 5000
 - Used duckdns to get a custom dns name for the site
 - Verified TLS using openssl s_client - TLSv1.3 with AES-256-GCM cipher
+
+
+## Task 4: Installing PostgreSQl and making it talk to Flask application.
+- PostgreSQL installed on Host B
+- Database and tables created for the PostgreSQL
+- Flask application connected to PostgreSQL and updating the HEALTH_LOG table.
