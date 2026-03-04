@@ -21,3 +21,12 @@
 - Enabled the flask service so that it runs always on startup and reboot.
 - Proved restart-on-failure by killing the process with kill -9, 
   systemd automatically restarted with a new PID within 5 seconds
+
+
+## Task 3: Installation of nginx as reverse proxy on Host A 
+- Installed nginx on Host A
+- Wrote nginx confoguration to forward request to the flask app running as service on HOST B 
+- Generated TLS self signed certificate for HTTPS connection
+- Added Inbound rule for Host B to open the port 5000
+- Used duckdns to get a custom dns name for the site
+- Verified TLS using openssl s_client - TLSv1.3 with AES-256-GCM cipher
