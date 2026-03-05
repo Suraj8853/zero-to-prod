@@ -68,8 +68,8 @@
 
 
 ## Task 9: Added Status page that shows the real time logs
-- Status page created from realtime log data
+- created generate_status.sh script reads healthcheck.log and builds the HTML page
 - Uptime is calculated automatically in percentage
-- Served via nginx at /status
+- Served via nginx at https://suraj-devops.duckdns.org/status
 - Runs automatically through cron job scheduled every minute
-- Displays Last 10 checks
+- Displays Last 10 healthchecks
