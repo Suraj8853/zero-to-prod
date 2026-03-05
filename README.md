@@ -59,3 +59,9 @@
 - Compression working(healthcheck.log.gz)
 - Forced log rotation verfied and working.
  
+
+## Task 8:Alerting added to the healthcheck script.
+- Created Alert log for seperation of failure logs from normal logs.
+- Writing critical alerts to the systemd journal using logger in script.
+- Simulated outage detected automatically in alert.log file as well as normal logs.
+- Recovery also detected automatically in normal logs(healthcheck.log)
