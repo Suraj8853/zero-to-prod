@@ -43,3 +43,12 @@
 - Host C recieving real-time WAL stream data from Host B
 - Data from database verified from both Host B and Host C
 - checked pg_stat_replication and verifies active streaming connection.
+
+
+## Task6: Create a uptime monitoring script
+- Create a shell script to check the health of the app.
+- The healthcheck script hits the HTTP endpoint every minute
+- Added it as a cronjob to make it run automatically
+- Enabled script to capture reponsetime of the app in seconds
+- verified the result by viewing it in real time using tail -f
+
