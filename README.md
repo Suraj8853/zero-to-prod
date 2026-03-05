@@ -65,3 +65,11 @@
 - Writing critical alerts to the systemd journal using logger in script.
 - Simulated outage detected automatically in alert.log file as well as normal logs.
 - Recovery also detected automatically in normal logs(healthcheck.log)
+
+
+## Task 9: Added Status page that shows the real time logs
+- Status page created from realtime log data
+- Uptime is calculated automatically in percentage
+- Served via nginx at /status
+- Runs automatically through cron job scheduled every minute
+- Displays Last 10 checks
