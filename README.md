@@ -36,3 +36,10 @@
 - PostgreSQL installed on Host B
 - Database and tables created for the PostgreSQL
 - Flask application connected to PostgreSQL and updating the HEALTH_LOG table.
+
+
+## Task 5: Install streaming replica on Host C
+- PostgreSQL streaming replication configured
+- Host C recieving real-time WAL stream data from Host B
+- Data from database verified from both Host B and Host C
+- checked pg_stat_replication and verifies active streaming connection.
