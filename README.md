@@ -36,6 +36,10 @@
 - PostgreSQL installed on Host B
 - Database and tables created for the PostgreSQL
 - Flask application connected to PostgreSQL and updating the HEALTH_LOG table.
+- Created partitioned table hc_metrics(ts, host, route, status, latency_ms) 
+  partitioned by month for query performance
+- Created monthly partitions for March and April 2026
+- Flask /health endpoint now writes latency metrics to hc_metrics table
 
 
 ## Task 5: Install streaming replica on Host C
