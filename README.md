@@ -77,3 +77,15 @@
 - Served via nginx at https://suraj-devops.duckdns.org/status
 - Runs automatically through cron job scheduled every minute
 - Displays Last 10 healthchecks
+
+
+## Task 10: Simulation of Troubleshooting scenarios.
+- Drill 1: Replica connection refused - diagnosed via logs, fixed iptables
+- Drill 2: TLS SNI mismatch - demonstrated with openssl s_client
+- Drill 3: Latency injection - tc netem, alert fired, recovery verified
+
+
+## Task 11 — Hardening & Demo
+- Added Nginx security headers to secure the application.
+- Added Runbook and troubleshooting docs
+- Added  demo readme script
