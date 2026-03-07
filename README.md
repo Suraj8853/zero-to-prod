@@ -69,6 +69,8 @@
 - Writing critical alerts to the systemd journal using logger in script.
 - Simulated outage detected automatically in alert.log file as well as normal logs.
 - Recovery also detected automatically in normal logs(healthcheck.log)
+- Added alert.sh script that logs to /var/log/incident.log.
+- Added backup db script(backup.sh) to take backup of postgresql db every midnight.
 
 
 ## Task 9: Added Status page that shows the real time logs
